@@ -1,0 +1,13 @@
+version: "1"
+
+services:
+  # FC29 for buffer overflow attacks
+  buffer-overflow-arm:
+    build: ./
+    image: buffer-overflow-arm
+    container_name: buffer-overflow-arm
+    hostname: overflow
+    privileged: true
+    stdin_open: true
+    tty: true
+
